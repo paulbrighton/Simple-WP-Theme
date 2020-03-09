@@ -22,6 +22,13 @@
       <?php echo wpautop('Sorry, no posts were found.') ?>
     <?php endif; ?>
   </div>
+
+  <div class="sidebar">
+      <!-- sidebar is taken from the id declared in the init_widgets function -->
+      <?php if(is_active_sidebar('sidebar')) : ?>
+        <?php dynamic_sidebar('sidebar'); ?>
+      <?php endif ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>

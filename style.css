@@ -41,12 +41,20 @@ footer {
 
 .main {
   margin: 25px 0;
+  width: 68%;
+}
+
+.sidebar {
+  margin: 25px 0;
+  width: 28%;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
   overflow: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container-flex {
@@ -88,6 +96,10 @@ article.post a.button {
   padding: 5px;
 }
 
+.meta a {
+  color: #f2f2f2;
+}
+
 .post-thumbnail img {
   width: 100%;
   height: auto;
@@ -116,5 +128,26 @@ article.post a.button {
 }
 
 .main-nav a:hover {
+  text-decoration: underline;
+}
+
+.side-widget {
+  border: 1px #ccc solid;
+  padding: 10px;
+  margin: 20px 0; 
+}
+
+.side-widget li {
+  list-style-type: none;
+  line-height: 2.2em;
+  margin-left: -20px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.side-widget a {
+  text-decoration: none;
+  color: #333;
+}
+.side-widget a:hover {
   text-decoration: underline;
 }
