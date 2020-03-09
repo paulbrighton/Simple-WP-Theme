@@ -80,3 +80,15 @@ article.post a.button {
   font-weight: 500;
   text-decoration: none;
 }
+
+.meta {
+  background: #333;
+  color: #f2f2f2;
+  padding: 5px;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}

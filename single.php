@@ -1,14 +1,12 @@
-  <?php get_header(); ?>
+<?php get_header(); ?>
 
   <div class="container container-flex">
     <div class="main">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post() ?>
-          <article class="post">
+          <article class="single-post">
             <h3>
-              <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-              </a>
+              <?php the_title(); ?>
             </h3>
             <div class="meta">
               Created by <?php the_author(); ?> on <?php the_time('F j, Y g:i a'); ?>
@@ -19,13 +17,8 @@
                 <?php the_post_thumbnail() ?>
               </div>
             <?php endif ?>
-
-            <?php the_excerpt(); ?>
-            <div class="read-more">
-              <a class="button" href="<?php the_permalink(); ?>">
-                Read More
-              </a>
-            </div>
+            
+            <?php the_content(); ?>
           </article>
         <?php endwhile; ?>
       <?php else : ?>
