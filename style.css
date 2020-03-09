@@ -65,6 +65,7 @@ article.post h3 a:hover {
 article.post {
   border-bottom: 1px #ccc solid;
   overflow: hidden;
+  padding-bottom: 35px;
 }
 
 .read-more {
@@ -91,4 +92,29 @@ article.post a.button {
   width: 100%;
   height: auto;
   margin-top: 25px;
+}
+
+.main-nav {
+  background: black;
+  padding: 5px;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+.main-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
 }
