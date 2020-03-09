@@ -1,0 +1,12 @@
+/*
+Theme Name: Simple
+Theme URI: https://wordpress.org/themes/simple/
+Author: Paul Brighton
+Author URI: https://paulbrighton.com/
+Description: Simple WordPress theme
+Version: 1.0
+*/
+
+body {
+  background: red;
+}
